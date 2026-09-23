@@ -5,6 +5,9 @@
     border: 5px solid black;
     width: 45%;
     height: 50%;
+    bottom:20%;
+    top: 20%;
+    left: 25%;
 }
 
 .input-reservasi {
