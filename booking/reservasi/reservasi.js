@@ -2,11 +2,11 @@ const penjelasan_reservasi = document.getElementById("penjelasan-reservasi");
 const tgl_reservasi = document.getElementById("tgl-reservasi");
 const jam_reservasi = document.getElementById("jam-reservasi");
 const jumlah_org = document.getElementById("jum-pelanggan");
-const btn_booking = document.getElementById("tombol-booking");
+const btn_reservasi = document.getElementById("tombol-reservasi");
 const pesan_status = document.getElementById("pesan-status");
 
 
-btn_booking.addEventListener("click", function () {
+btn_reservasi.addEventListener("click", function () {
   const jumlah = Number(jumlah_org.value);
   const jam = jam_reservasi.value;
 

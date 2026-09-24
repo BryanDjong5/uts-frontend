@@ -1,0 +1,18 @@
+.booking {
+    position: absolute;
+    border-radius: 10px;
+    border: 5px solid black;
+    padding: 20px;
+    width: 40%;
+}
+
+.booking-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 15px;
+    width: 45%;
+    height: 45%;
+    left: 25%;
+}
