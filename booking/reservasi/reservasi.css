@@ -15,6 +15,32 @@ body {
     background-color: white;
 }
 
+.gambar-jam img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.gambar-meja img {
+    position: absolute;
+    top: 63%;
+    left: 0;
+    width: 20%;
+}
+
+.gambar-antri img {
+    position: absolute;
+    top: 70%;
+    right: 0;        
+    width: 20%;
+}
+
+.gambar-price img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
 .input-reservasi {
     position: absolute;
     display: flex;

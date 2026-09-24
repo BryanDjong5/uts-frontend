@@ -12,8 +12,8 @@ btn_booking.addEventListener("click", function () {
 
   function waktu_reservasi(jam){
 
-    if(jam >= "22:00" || jam <= "09.59"){
-      pesan_status.textContent = "Maaf, restoran telah tutup! Restoran buka dari pkl.10:00 hingga 21:59!";
+    if(jam >= "23:00" || jam <= "09.59"){
+      pesan_status.textContent = "Maaf, restoran telah tutup! Restoran buka dari pkl.10:00 hingga 22:59!";
       return false;
     }
   return true;
