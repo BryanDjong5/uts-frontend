@@ -37,7 +37,8 @@ btn_booking.addEventListener("click", function () {
   }
 
   pesan_status.textContent = "Reservasi berhasil!";
+  window.location.href= "booking form/bookingForm.html";
   pesan_status.style.color = "green";
 
-  waktu_reservasi(tanggal, jam);
+  waktu_reservasi(jam);
 });
