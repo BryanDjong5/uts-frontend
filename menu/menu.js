@@ -1,4 +1,5 @@
 const menuContainer = document.getElementById('menu-container');
+const filterBtns = document.querySelectorAll('.filter-btn');
 
 function renderMenu(data) {
     menuContainer.innerHTML = '';
@@ -17,5 +18,21 @@ function renderMenu(data) {
         menuContainer.appendChild(card);
     });
 }
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        document.querySelector('.filter-btn.active').classList.remove('active');
+        e.target.classList.add('active');
+
+        const category = e.target.dataset.category;
+        
+        if (category === 'all') {
+            renderMenu(menuData);
+        } else {
+            const filteredData = menuData.filter(item => item.category === category);
+            renderMenu(filteredData);
+        }
+    });
+});
 
 renderMenu(menuData);
