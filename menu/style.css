@@ -113,3 +113,82 @@ body {
     font-size: 0.9rem;
     color: #666;
 }
+
+.detail-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.detail-img {
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.detail-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail-info h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.detail-price {
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.detail-desc {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.ingredients h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.ingredients ul {
+    list-style-position: inside;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.back-btn:hover {
+    background-color: #ff9800;
+}
+
+@media (max-width: 768px) {
+    .detail-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

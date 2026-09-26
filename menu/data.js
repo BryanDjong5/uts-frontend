@@ -38,5 +38,15 @@ const menuData = [
         image: "images/lemontea.jpg",
         desc: "Es teh hitam segar dengan perasan jeruk lemon asli dan daun mint segar.",
         ingredients: ["Teh Hitam", "Lemon", "Gula", "Daun Mint", "Es Batu"]
+    },
+    {
+        id: 5,
+        name: "Chocolate Lava Cake",
+        category: "dessert",
+        price: "Rp 35.000",
+        rating: 4.7,
+        image: "images/cake.jpg",
+        desc: "Kue cokelat hangat dengan lelehan cokelat pekat di dalamnya, disajikan bersama es krim vanilla.",
+        ingredients: ["Cokelat Hitam", "Mentega", "Telur", "Gula", "Tepung Terigu", "Es Krim Vanilla"]
     }
 ];

@@ -4,8 +4,13 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 function renderMenu(data) {
     menuContainer.innerHTML = '';
     data.forEach(item => {
-        const card = document.createElement('div');
+        const card = document.createElement('a');
+        card.href = `detail.html?id=${item.id}`;
         card.classList.add('menu-card');
+        
+        card.style.textDecoration = 'none';
+        card.style.color = 'inherit';
+        card.style.display = 'block';
         
         card.innerHTML = `
             <img src="${item.image}" alt="${item.name}">
