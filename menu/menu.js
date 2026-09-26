@@ -1,4 +1,21 @@
-const initialData = [
-    { name: "Nasi Goreng Spesial", price: "Rp 45.000", rating: 4.8 },
-    { name: "Ayam Bakar Madu", price: "Rp 55.000", rating: 4.9 }
-];
+const menuContainer = document.getElementById('menu-container');
+
+function renderMenu(data) {
+    menuContainer.innerHTML = '';
+    data.forEach(item => {
+        const card = document.createElement('div');
+        card.classList.add('menu-card');
+        
+        card.innerHTML = `
+            <img src="${item.image}" alt="${item.name}">
+            <div class="menu-info">
+                <h3>${item.name}</h3>
+                <p class="price">${item.price}</p>
+                <p class="rating">⭐ ${item.rating}</p>
+            </div>
+        `;
+        menuContainer.appendChild(card);
+    });
+}
+
+renderMenu(menuData);
