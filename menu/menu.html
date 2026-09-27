@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Utama</title>
+    <title>Menu Utama - RestaurantKu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Restaurant</div>
+        <div class="logo">RestaurantKu</div>
         <ul class="nav-links">
             <li><a href="../index.html">Home</a></li>
             <li><a href="menu.html" class="active">Menu</a></li>
@@ -21,6 +21,19 @@
         <h1>Menu Spesial Kami</h1>
         <p>Jelajahi hidangan terbaik dari koki kami</p>
     </header>
+
+    <div class="controls-container">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Cari makanan atau minuman...">
+        </div>
+        <div class="sort-box">
+            <select id="sort-input">
+                <option value="default">Urutkan: Default</option>
+                <option value="lowest">Harga: Termurah</option>
+                <option value="highest">Harga: Termahal</option>
+            </select>
+        </div>
+    </div>
 
     <div class="filter-container">
         <button class="filter-btn active" data-category="all">All</button>

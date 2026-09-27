@@ -1,52 +1,10 @@
 const menuData = [
-    {
-        id: 1,
-        name: "Nasi Goreng Spesial",
-        category: "main-course",
-        price: "Rp 45.000",
-        rating: 4.8,
-        image: "images/nasigoreng.jpg",
-        desc: "Nasi goreng spesial dengan bumbu rempah rahasia, disajikan dengan telur mata sapi dan kerupuk udang.",
-        ingredients: ["Nasi Putih", "Telur", "Ayam Suwir", "Bawang Merah", "Bawang Putih", "Kecap Manis"]
-    },
-    {
-        id: 2,
-        name: "Ayam Bakar Madu",
-        category: "main-course",
-        price: "Rp 55.000",
-        rating: 4.9,
-        image: "images/ayambakar.jpg",
-        desc: "Ayam bakar empuk dengan olesan madu murni dan bumbu rempah pilihan.",
-        ingredients: ["Daging Ayam", "Madu", "Bawang Merah", "Bawang Putih", "Ketumbar", "Kecap Manis"]
-    },
-    {
-        id: 3,
-        name: "Garlic Bread",
-        category: "appetizer",
-        price: "Rp 25.000",
-        rating: 4.5,
-        image: "images/bread.jpg",
-        desc: "Roti panggang renyah dengan olesan mentega bawang putih dan peterseli segar.",
-        ingredients: ["Roti Baguette", "Mentega", "Bawang Putih", "Peterseli", "Garam"]
-    },
-    {
-        id: 4,
-        name: "Lemon Iced Tea",
-        category: "drinks",
-        price: "Rp 15.000",
-        rating: 4.6,
-        image: "images/lemontea.jpg",
-        desc: "Es teh hitam segar dengan perasan jeruk lemon asli dan daun mint segar.",
-        ingredients: ["Teh Hitam", "Lemon", "Gula", "Daun Mint", "Es Batu"]
-    },
-    {
-        id: 5,
-        name: "Chocolate Lava Cake",
-        category: "dessert",
-        price: "Rp 35.000",
-        rating: 4.7,
-        image: "images/cake.jpg",
-        desc: "Kue cokelat hangat dengan lelehan cokelat pekat di dalamnya, disajikan bersama es krim vanilla.",
-        ingredients: ["Cokelat Hitam", "Mentega", "Telur", "Gula", "Tepung Terigu", "Es Krim Vanilla"]
-    }
+    { id: 1, name: "Nasi Goreng Spesial", category: "main-course", price: 45000, rating: 4.8, image: "images/nasigoreng.jpg", desc: "Nasi goreng spesial dengan bumbu rempah rahasia, disajikan dengan telur mata sapi dan kerupuk udang.", ingredients: ["Nasi Putih", "Telur", "Ayam Suwir", "Bawang Merah", "Bawang Putih", "Kecap Manis"] },
+    { id: 2, name: "Ayam Bakar Madu", category: "main-course", price: 55000, rating: 4.9, image: "images/ayambakar.jpg", desc: "Ayam bakar empuk dengan olesan madu murni dan bumbu rempah pilihan.", ingredients: ["Daging Ayam", "Madu", "Bawang Merah", "Bawang Putih", "Ketumbar", "Kecap Manis"] },
+    { id: 3, name: "Garlic Bread", category: "appetizer", price: 25000, rating: 4.5, image: "images/bread.jpg", desc: "Roti panggang renyah dengan olesan mentega bawang putih dan peterseli segar.", ingredients: ["Roti Baguette", "Mentega", "Bawang Putih", "Peterseli", "Garam"] },
+    { id: 4, name: "Lemon Iced Tea", category: "drinks", price: 15000, rating: 4.6, image: "images/lemontea.jpg", desc: "Es teh hitam segar dengan perasan jeruk lemon asli dan daun mint segar.", ingredients: ["Teh Hitam", "Lemon", "Gula", "Daun Mint", "Es Batu"] },
+    { id: 5, name: "Chocolate Lava Cake", category: "dessert", price: 35000, rating: 4.7, image: "images/cake.jpg", desc: "Kue cokelat hangat dengan lelehan cokelat pekat di dalamnya, disajikan bersama es krim vanilla.", ingredients: ["Cokelat Hitam", "Mentega", "Telur", "Gula", "Tepung Terigu", "Es Krim Vanilla"] },
+    { id: 6, name: "Spaghetti Bolognese", category: "main-course", price: 60000, rating: 4.8, image: "images/spageti.jpg", desc: "Pasta al dente dengan saus daging sapi cincang tomat yang kaya rasa.", ingredients: ["Spaghetti", "Daging Sapi", "Saus Tomat", "Bawang Bombay", "Keju Parmesan"] },
+    { id: 7, name: "Matcha Latte", category: "drinks", price: 28000, rating: 4.9, image: "images/matcha.jpg", desc: "Perpaduan bubuk matcha premium Jepang dengan susu segar pilihan.", ingredients: ["Bubuk Matcha", "Susu Segar", "Gula Cair", "Es Batu"] },
+    { id: 8, name: "Tiramisu", category: "dessert", price: 42000, rating: 4.8, image: "images/tiramisu.jpg", desc: "Dessert klasik Italia dengan lapisan biskuit kopi dan krim mascarpone lembut.", ingredients: ["Biskuit Ladyfinger", "Kopi Espresso", "Keju Mascarpone", "Bubuk Kakao"] }
 ];
