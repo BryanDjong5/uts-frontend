@@ -17,10 +17,20 @@ function sistemBooking() {
         hasil_validasi.style.color = "red";
 
         return false;
-    }
 
-    return true;
+    } else if (new Date(tgl_booking.value + "T" + jam_booking.value) < new Date()) {
+
+        hasil_validasi.innerHTML = "<p>Tanggal dan jam booking sudah lewat!</p>";
+        hasil_validasi.style.color = "red";
+
+        return false;
+
+    } else {
+
+        return true;
+    }
 }
+
 
 tombol_booking.addEventListener("click", function() {
 
@@ -28,6 +38,12 @@ tombol_booking.addEventListener("click", function() {
         return;
     }
 
+    const nomorBooking = "BK-" +
+        new Date().toISOString().slice(0, 10).replace(/-/g, "") +
+        "-" +
+        Math.floor(1000 + Math.random() * 9000);
+
+    localStorage.setItem("nomorBooking", nomorBooking);
     localStorage.setItem("nama", nama.value);
     localStorage.setItem("no_telp", no_telp.value);
     localStorage.setItem("email", email.value);
@@ -35,6 +51,7 @@ tombol_booking.addEventListener("click", function() {
     localStorage.setItem("jam_booking", jam_booking.value);
     localStorage.setItem("jum_orang", jum_orang.value);
     localStorage.setItem("acara", acara.value);
+
     window.location.href = "../booking form/bookingConfirmation.html";
 });
 
