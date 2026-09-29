@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RasaNusantara - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Resto Nusantara</div>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <div class="nav-menu" id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#promo">Promo & Information</a>
+            <a href="#login">Login</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="small-title">SELAMAT DATANG DI</p>
+            <h1>Resto Nusantara</h1>
+            <p>
+                Nikmati hidangan lezat dengan cita rasa khas Indonesia
+                dalam suasana restoran yang nyaman dan hangat.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="button">Lihat Menu</a>
+                <a href="#reservasi" class="button button-outline">Reservasi</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="best-seller" class="best-seller">
+        <div class="section-title">
+            <p>MENU FAVORIT</p>
+            <h2>Best Seller</h2>
+            <span>Beberapa menu yang paling banyak disukai pelanggan kami.</span>
+        </div>
+
+        <div class="menu-container">
+            <div class="menu-card">
+                <div class="menu-image nasi-goreng">🍳</div>
+                <div class="menu-content">
+                    <h3>Nasi Goreng Special</h3>
+                    <p>Nasi goreng dengan telur, ayam, dan bumbu khas restoran.</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image ayam-bakar">🍗</div>
+                <div class="menu-content">
+                    <h3>Ayam Bakar</h3>
+                    <p>Ayam bakar dengan bumbu manis gurih dan sambal spesial.</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image mie-goreng">🍜</div>
+                <div class="menu-content">
+                    <h3>Mie Goreng Special</h3>
+                    <p>Mie goreng dengan sayuran, telur, dan topping pilihan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>© <span id="tahun"></span> Resto Nusantara. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
