@@ -11,33 +11,128 @@
         <ul>
             <li><a href="promotions.html">Promotions</a></li>
             <li><a href="events.html">Events</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="gallery.html" style="color: #ff8c00;">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Galeri Hidangan Kami</h1>
-        <p>Jelajahi kelezatan menu andalan restoran kami.</p>
-        <section id="gallery-grid">
-            <div class="gallery-item">
-                <img src="img/ayam_bakar.jpeg" alt="Ayam Bakar">
-                <p>Ayam Bakar</p>
-            </div>
-            <div class="gallery-item">
-                <img src="img/nasi_goreng.jpeg" alt="Nasi Goreng">
-                <p>Nasi Goreng Spesial</p>
-            </div>
-            <div class="gallery-item">
-                <img src="img/roti_bakar.jpeg" alt="Roti Bakar">
-                <p>Roti Bakar</p>
-            </div>
-            <div class="gallery-item">
-                <img src="img/fondan_coklat.jpeg" alt="Fondan Coklat">
-                <p>Choco Fondant</p>
+        <h1 style="text-align: center;">Galeri & Momen</h1>
+        
+        <div class="tab-container">
+            <button class="tab-btn" onclick="openTab('tab-momen')">Suasana & Momen</button>
+            <button class="tab-btn" onclick="openTab('tab-rasa')">Kisah di Balik Rasa</button>
+        </div>
+
+        <section id="tab-momen" class="tab-content" style="display: block;">
+            <p style="text-align: center; margin-bottom: 20px;">Intip fasilitas dan momen hangat di restoran kami.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/suasana_resto.jpg" alt="Suasana Resto" onerror="this.src=''">
+                    <p>Area Makan Nyaman</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/foto_keluarga.jpg" alt="Momen Keluarga" onerror="this.src=''">
+                    <p>Momen Hangat Keluarga</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/koki_dapur.jpg" alt="Dapur" onerror="this.src=''">
+                    <p>Dapur Profesional</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/live-akustik.jpg" alt="Akustik">
+                    <p>Panggung Akustik</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/nonton-bareng.jpg" alt="Nobar">
+                    <p>Area Nonton Bareng</p>
+                </div>
             </div>
         </section>
+
+        <section id="tab-rasa" class="tab-content">
+            <p style="text-align: center; margin-bottom: 20px;">Klik hidangan untuk mengetahui cerita di balik rasanya.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="bukaModal('img/ayam_bakar.jpeg', 'Ayam Bakar', 'Diungkep perlahan dengan racikan rempah warisan keluarga sebelum dibakar di atas arang. Menghasilkan perpaduan rasa manis, gurih, dan aroma asap yang khas.')">
+                    <img src="img/ayam_bakar.jpeg" alt="Ayam Bakar">
+                    <p>Ayam Bakar</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/nasi_goreng.jpeg', 'Nasi Goreng Spesial', 'Dimasak dengan api besar untuk mengunci aroma wok hei, dipadukan dengan bumbu rempah pekat yang membuatnya selalu dirindukan.')">
+                    <img src="img/nasi_goreng.jpeg" alt="Nasi Goreng">
+                    <p>Nasi Goreng Spesial</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/rendang-sapi.jpeg', 'Rendang Sapi', 'Potongan daging sapi pilihan dimasak perlahan selama berjam-jam dalam lumuran santan kental, menghasilkan tekstur empuk dengan bumbu yang meresap sempurna.')">
+                    <img src="img/rendang-sapi.jpeg" alt="Rendang Sapi">
+                    <p>Rendang Sapi</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/ayam-geprek.jpeg', 'Ayam Geprek', 'Perpaduan tekstur ayam krispi keemasan dengan ulekan sambal bawang pedas yang menggigit. Sangat memanjakan lidah para pecinta sensasi pedas.')">
+                    <img src="img/ayam-geprek.jpeg" alt="Ayam Geprek">
+                    <p>Ayam Geprek</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/sate-ayam.jpeg', 'Sate Ayam', 'Potongan daging ayam lembut yang dipanggang sempurna, disajikan dengan lumuran bumbu kacang kental gurih manis yang melekat di setiap tusuknya.')">
+                    <img src="img/sate-ayam.jpeg" alt="Sate Ayam">
+                    <p>Sate Ayam</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/mie-goreng.jpeg', 'Mie Goreng', 'Racikan mie kenyal yang ditumis bersuhu tinggi, menyajikan cita rasa gurih manis dengan limpahan topping segar yang menggugah selera.')">
+                    <img src="img/mie-goreng.jpeg" alt="Mie Goreng">
+                    <p>Mie Goreng</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/fondan_coklat.jpeg', 'Choco Fondant', 'Kejutan manis yang menghangatkan suasana. Di balik tekstur bolu cokelat yang lembut di luar, tersembunyi lelehan lava cokelat pekat yang lumer di mulut.')">
+                    <img src="img/fondan_coklat.jpeg" alt="Fondan Coklat">
+                    <p>Choco Fondant</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/es-campur.jpeg', 'Es Campur', 'Mangkuk penuh warna yang membangkitkan nostalgia. Serutan es menggunung yang disiram sirup manis legit, menyelimuti ragam isian kenyal di bawahnya.')">
+                    <img src="img/es-campur.jpeg" alt="Es Campur">
+                    <p>Es Campur</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/jus-alpukat.jpeg', 'Jus Alpukat', 'Kental, lembut, dan kaya rasa. Diambil dari alpukat mentega pilihan yang diblend sempurna dengan sentuhan kental manis cokelat di pinggiran gelas.')">
+                    <img src="img/jus-alpukat.jpeg" alt="Jus Alpukat">
+                    <p>Jus Alpukat</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/jus-strawberry.jpeg', 'Jus Strawberry', 'Bulir-bulir stroberi segar yang dihaluskan menjadi minuman asam manis yang menyegarkan. Sangat cocok untuk mengimbangi hidangan gurih.')">
+                    <img src="img/jus-strawberry.jpeg" alt="Jus Strawberry">
+                    <p>Jus Strawberry</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/americano.jpeg', 'Americano', 'Ekstraksi kopi murni yang tegas dan berkarakter. Pilihan tepat bagi Anda yang mencari kesegaran sejati dan energi murni tanpa distraksi rasa manis.')">
+                    <img src="img/americano.jpeg" alt="Americano">
+                    <p>Americano</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/kentang-goreng.jpeg', 'Kentang Goreng', 'Potongan kentang pilihan yang digoreng hingga tingkat kerenyahan sempurna di luar, namun tetap lembut di dalam. Teman ngobrol yang tak pernah salah.')">
+                    <img src="img/kentang-goreng.jpeg" alt="Kentang Goreng">
+                    <p>Kentang Goreng</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/lumpia-goreng.jpeg', 'Lumpia Goreng', 'Digoreng dadakan agar selalu tersaji hangat. Tekstur kulitnya yang krispi menyembunyikan isian rebung dan sayur gurih yang kaya rasa.')">
+                    <img src="img/lumpia-goreng.jpeg" alt="Lumpia Goreng">
+                    <p>Lumpia Goreng</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/tempe-mendoan.jpeg', 'Tempe Mendoan', 'Sederhana namun bikin ketagihan. Dibalut adonan tepung berbumbu yang digoreng setengah matang untuk mempertahankan tekstur basah dan gurih khas mendoan.')">
+                    <img src="img/tempe-mendoan.jpeg" alt="Tempe Mendoan">
+                    <p>Tempe Mendoan</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/roti_bakar.jpeg', 'Roti Bakar', 'Roti tebal yang dipanggang dengan mentega hingga permukaan luarnya garing, menyembunyikan kelembutan dan manisnya isian di setiap gigitannya.')">
+                    <img src="img/roti_bakar.jpeg" alt="Roti Bakar">
+                    <p>Roti Bakar</p>
+                </div>
+                <div class="gallery-item" onclick="bukaModal('img/pisang-keju.jpeg', 'Pisang Keju', 'Kombinasi klasik yang tak lekang oleh waktu. Pisang manis yang digoreng hangat, tertutup rapat oleh parutan keju gurih dan taburan meises.')">
+                    <img src="img/pisang-keju.jpeg" alt="Pisang Keju">
+                    <p>Pisang Keju</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="food-modal" class="modal">
+            <div class="modal-content">
+                <button class="close-btn" onclick="tutupModal()">X</button>
+                <img id="modal-img" src="" alt="Menu Foto">
+                <div class="modal-text">
+                    <h2 id="modal-title">Nama Menu</h2>
+                    <p id="modal-desc">Deskripsi cerita menu akan muncul di sini.</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2026 Restoran Kami. All rights reserved.</p>
+        <p style="text-align: center;">&copy; 2026 Restoran Kami. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
