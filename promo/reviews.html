@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Restoran Kami</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="promotions.html">Promotions</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reviews.html" class="nav-active">Reviews</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 style="text-align: center;">Apa Kata Mereka?</h1>
+        <p style="text-align: center; margin-bottom: 40px;">Ulasan asli dari para pelanggan setia Restoran Kami.</p>
+
+        <div class="review-grid" id="review-list">
+            <div class="review-card">
+                <h3>Budi Santoso</h3>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <div class="tag-container">
+                    <span class="menu-tag">Ayam Bakar</span>
+                </div>
+                <p>"Ayam bakarnya juara, bumbu meresap sampai ke tulang. Area makan outdoor-nya juga asik banget buat nongkrong sore."</p>
+            </div>
+            <div class="review-card">
+                <h3>Citra Kirana</h3>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <div class="tag-container">
+                    <span class="menu-tag">Nasi Goreng Spesial</span>
+                    <span class="menu-tag">Es Lemon Tea</span>
+                </div>
+                <p>"Pas banget dapet promo Weekend Kenyang. Makan enak berempat jadi jauh lebih hemat. Pelayanannya ramah banget!"</p>
+            </div>
+            <div class="review-card">
+                <h3>Dimas Anggara</h3>
+                <p class="stars">⭐⭐⭐⭐</p>
+                <div class="tag-container">
+                    <span class="menu-tag">Choco Fondant</span>
+                </div>
+                <p>"Choco fondant-nya lumer di mulut! Sayang kemarin pas ke sana agak antri. Tapi wajar sih, makanannya emang enak."</p>
+            </div>
+            <div class="review-card">
+                <h3>Eka Putri</h3>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <div class="tag-container">
+                    <span class="menu-tag">Jus Alpukat</span>
+                </div>
+                <p>"Panggung live akustiknya bikin suasana makan malam jadi romantis. Jus alpukatnya kental dan manisnya pas."</p>
+            </div>
+            <div class="review-card">
+                <h3>Fahmi Reza</h3>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <div class="tag-container">
+                    <span class="menu-tag">Tempe Mendoan</span>
+                </div>
+                <p>"Restorannya bersih dan rapi. Dapur profesionalnya kelihatan jelas, higienis. Tempe mendoannya wajib coba!"</p>
+            </div>
+            <div class="review-card">
+                <h3>Gita Permata</h3>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <div class="tag-container">
+                    <span class="menu-tag">Nasi Goreng Spesial</span>
+                </div>
+                <p>"Porsi nasi goreng spesialnya brutal, rasanya nendang banget ala bintang lima. Worth it banget harganya."</p>
+            </div>
+            <div class="review-card">
+                <h3>Hadi Kusuma</h3>
+                <p class="stars">⭐⭐⭐⭐</p>
+                <div class="tag-container">
+                    <span class="menu-tag">Sate Ayam</span>
+                </div>
+                <p>"Sate ayamnya bumbunya royal, dagingnya gede-gede. Suasananya pas banget buat kumpul keluarga besar."</p>
+            </div>
+            <div class="review-card">
+                <h3>Intan Sari</h3>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <div class="tag-container">
+                    <span class="menu-tag">Es Campur</span>
+                </div>
+                <p>"Es campurnya seger banget buat siang-siang yang panas. Pelayanan cepat dan mas-masnya tanggap."</p>
+            </div>
+            <div class="review-card">
+                <h3>Joko Anwar</h3>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <div class="tag-container">
+                    <span class="menu-tag">Kentang Goreng</span>
+                </div>
+                <p>"Nobar bola di sini seru parah, layarnya gede, cemilan kentang gorengnya pas buat nemenin teriak-teriak."</p>
+            </div>
+            <div class="review-card">
+                <h3>Kartika Dewi</h3>
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <div class="tag-container">
+                    <span class="menu-tag">Mie Goreng</span>
+                </div>
+                <p>"Mie gorengnya the best! Wangi wok hei nya beneran kerasa banget di lidah. Tempatnya super cozy."</p>
+            </div>
+        </div>
+
+        <section class="newsletter-section" style="margin-top: 50px;">
+            <h2>Punya Pengalaman Menarik?</h2>
+            <p>Bagikan cerita Anda. Masukan Anda membantu kami melayani lebih baik.</p>
+            
+            <form id="reviewForm" class="review-form" onsubmit="submitReview(event)">
+                <input type="text" id="reviewerName" placeholder="Nama Anda" required style="width: 100%; box-sizing: border-box;">
+                
+                <div class="star-rating-container">
+                    <span class="star-select">★</span>
+                    <span class="star-select">★</span>
+                    <span class="star-select">★</span>
+                    <span class="star-select">★</span>
+                    <span class="star-select">★</span>
+                </div>
+
+                <p style="margin: 0; font-size: 14px; color: #555;">Pilih Menu Utama (Bisa lebih dari 1):</p>
+                <div class="tag-selector">
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Ayam Bakar</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Ayam Geprek</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Nasi Goreng Spesial</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Mie Goreng</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Rendang Sapi</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Sate Ayam</button>
+                </div>
+
+                <p style="margin: 0; font-size: 14px; color: #555;">Pilih Camilan & Minuman (Bisa lebih dari 1):</p>
+                <div class="tag-selector">
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Kentang Goreng</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Lumpia Goreng</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Tempe Mendoan</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Roti Bakar</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Pisang Keju</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Choco Fondant</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Es Campur</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Jus Alpukat</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Jus Strawberry</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Americano</button>
+                </div>
+
+                <textarea id="reviewText" placeholder="Tulis ulasan Anda di sini..." rows="4" required style="width: 100%; box-sizing: border-box;"></textarea>
+                <button type="submit" style="width: 100%;">Kirim Ulasan</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p style="text-align: center;">&copy; 2026 Restoran Kami. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

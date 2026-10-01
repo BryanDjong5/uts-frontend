@@ -3,47 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promo Menarik - Restoran Kami</title>
+    <title>Promotions & FAQ - Restoran Kami</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="promotions.html">Promotions</a></li>
+            <li><a href="promotions.html" class="nav-active">Promotions</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
         </ul>
     </nav>
     <main>
-        <section id="banner-promo">
-            <h1>Promo Makanan & Penawaran Spesial</h1>
-            <p>Klaim vouchernya sekarang dan nikmati harga spesial untuk menu andalan kami!</p>
+        <h1 style="text-align: center;">Promo Makanan & Penawaran Spesial</h1>
+        <p style="text-align: center; margin-bottom: 40px;">Klaim vouchernya sekarang dan nikmati harga spesial untuk menu andalan kami!</p>
+        
+        <section class="promo-card">
+            <h2>Weekend Kenyang (Diskon 15%)</h2>
+            <p>Beli 2 porsi menu utama (Nasi Goreng / Ayam Bakar) dapat diskon 15% plus Gratis 2 Es Lemon Tea.</p>
+            <p><strong>Masa Berlaku:</strong> Setiap Sabtu & Minggu, Oktober 2026</p>
+            <button onclick="alert('Kode Promo: WKND15\nTunjukkan kode ini ke kasir saat pembayaran.')">Klaim Voucher</button>
         </section>
-        <section id="daftar-promo">
-            <article class="promo-card">
-                <h2>Weekend Kenyang (Diskon 15%)</h2>
-                <p>Beli 2 porsi menu utama (Nasi Goreng / Ayam Bakar) dapat diskon 15% plus Gratis 2 Es Lemon Tea.</p>
-                <p><strong>Masa Berlaku:</strong> Setiap Sabtu & Minggu, Oktober 2026</p>
-                <button onclick="alert('Kode Promo: WEEKEND15\n\nHarap tunjukkan screenshot ini ke kasir.\n*S&K: Hanya berlaku hari Sabtu-Minggu untuk pembelian minimal 2 porsi menu utama.')">Klaim Voucher</button>
-            </article>
 
-            <article class="promo-card">
-                <h2>Makan Puas Dapat Voucher</h2>
-                <p>Transaksi minimal Rp 100.000, langsung dapat potongan Rp 15.000.</p>
-                <p><strong>Masa Berlaku:</strong> 1 - 31 Oktober 2026</p>
-                <button onclick="alert('Kode Promo: MAKANPUAS\n\nHarap tunjukkan screenshot ini ke kasir.\n*S&K: Berlaku jika total tagihan di struk mencapai minimal Rp 100.000.')">Klaim Voucher</button>
-            </article>
+        <section class="promo-card">
+            <h2>Makan Puas Dapat Voucher</h2>
+            <p>Transaksi minimal Rp 100.000, langsung dapat potongan Rp 15.000 untuk transaksi berikutnya.</p>
+            <p><strong>Masa Berlaku:</strong> 1 - 31 Oktober 2026</p>
+            <button onclick="alert('Kode Promo: PUAS15K\nTunjukkan struk sebelumnya ke kasir untuk klaim.')">Klaim Voucher</button>
+        </section>
 
-            <article class="promo-card">
-                <h2>Flash Sale 10.10 (Menu Cuma 15rb!)</h2>
-                <p>Spesial tanggal kembar! Nikmati Nasi Goreng Spesial atau Ayam Bakar hanya seharga Rp 15.000.</p>
-                <p id="countdown" style="color: #ff8c00; font-weight: bold; margin-top: 10px;"></p>
-                <button onclick="alert('Kode Promo: FLASH10\n\nHarap tunjukkan screenshot ini ke kasir.\n*S&K: Promo hanya valid dan bisa ditukarkan pada tanggal 10 Oktober 2026.')">Klaim Voucher</button>
-            </article>
+        <section class="promo-card flash-sale">
+            <h2>Flash Sale 10.10 (Menu Cuma 15rb!)</h2>
+            <p id="countdown" style="font-weight: bold; color: #ff8c00; font-size: 18px;"></p>
+            <p>Spesial tanggal kembar! Nikmati Nasi Goreng Spesial atau Ayam Bakar hanya seharga Rp 15.000.</p>
+            <button onclick="alert('Kode Promo: FLASH1010\nHanya berlaku pada tanggal 10 Oktober 2026!')">Klaim Voucher</button>
+        </section>
+
+        <section class="faq-section">
+            <h2 style="text-align: center; margin-top: 50px;">Tanya Jawab Sistem Voucher & Promo</h2>
+            <div class="faq-container">
+                <button class="faq-btn" onclick="toggleFaq(this)">Apakah kode voucher promo bisa digabungkan?</button>
+                <div class="faq-content"><p>Tidak. Dalam satu struk transaksi, pelanggan hanya dapat menggunakan satu kode voucher promo.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Apakah ada minimum transaksi untuk menggunakan voucher promo?</button>
+                <div class="faq-content"><p>Bergantung jenis promonya. Untuk Voucher Welcome VIP, berlaku tanpa minimum transaksi. Sedangkan promo khusus seperti "Makan Puas", berlaku minimum Rp 100.000.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Bagaimana alur klaim voucher VIP di kasir?</button>
+                <div class="faq-content"><p>Anda diwajibkan menunjukkan kotak masuk email asli yang berisi pesan dari Restoran Kami. Bukti berupa tangkapan layar (screenshot) tidak akan kami terima demi keamanan.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Apakah kode voucher bisa diberikan ke orang lain?</button>
+                <div class="faq-content"><p>Tidak bisa. Voucher Member VIP terikat pada alamat email yang terdaftar. Staf kami mungkin akan memverifikasi kesesuaian data pendaftar.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Berapa lama batas waktu penggunaan voucher diskon dari email?</button>
+                <div class="faq-content"><p>Voucher Welcome dan Voucher Ulang Tahun hanya berlaku selama 7 hari kalender semenjak email dikirimkan ke kotak masuk Anda.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Berapa lama masa berlaku kode voucher setelah diklaim di web?</button>
+                <div class="faq-content"><p>Kode voucher diskon kilat (seperti Weekend Kenyang) otomatis kadaluarsa dalam waktu 1x24 jam setelah Anda menekan tombol Klaim.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Apakah promo diskon berlaku untuk dibawa pulang (Takeaway)?</button>
+                <div class="faq-content"><p>Sebagian besar promo kami khusus untuk makan di tempat (Dine-in) agar kualitas hidangan tetap terjaga.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Apakah promo Weekend Kenyang bisa pisah struk (Split Bill)?</button>
+                <div class="faq-content"><p>Mohon maaf, untuk transaksi yang menggunakan promo diskon tidak berlaku sistem pisah struk kasir.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Apakah promo Flash Sale berlaku kelipatan?</button>
+                <div class="faq-content"><p>Tidak. Promo Flash Sale 10.10 hanya berlaku untuk maksimal pembelian 2 porsi per transaksi per meja.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Bagaimana jika sistem kasir sedang offline?</button>
+                <div class="faq-content"><p>Jika sistem offline, promo tetap berlaku dan kasir kami akan memproses diskon secara manual menggunakan nota fisik.</p></div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <h2>Bergabung dengan Klub VIP Kami!</h2>
+            <p>Dapatkan Voucher Welcome Diskon 10% dan kejutan spesial di bulan ulang tahun Anda.</p>
+            <form id="vipForm" class="newsletter-form" onsubmit="submitVip(event)">
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Alamat Email" required>
+                <select required>
+                    <option value="" disabled selected>Bulan Lahir</option>
+                    <option value="Januari">Januari</option>
+                    <option value="Februari">Februari</option>
+                    <option value="Maret">Maret</option>
+                    <option value="April">April</option>
+                    <option value="Mei">Mei</option>
+                    <option value="Juni">Juni</option>
+                    <option value="Juli">Juli</option>
+                    <option value="Agustus">Agustus</option>
+                    <option value="September">September</option>
+                    <option value="Oktober">Oktober</option>
+                    <option value="November">November</option>
+                    <option value="Desember">Desember</option>
+                </select>
+                <button type="submit">Daftar VIP</button>
+            </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 Restoran Kami. All rights reserved.</p>
+        <p style="text-align: center;">&copy; 2026 Restoran Kami. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

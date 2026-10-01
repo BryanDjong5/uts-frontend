@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Restoran Kami</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,31 +12,40 @@
         <ul>
             <li><a href="promotions.html">Promotions</a></li>
             <li><a href="events.html">Events</a></li>
-            <li><a href="gallery.html" style="color: #ff8c00;">Gallery</a></li>
+            <li><a href="gallery.html" class="nav-active">Gallery</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
         </ul>
     </nav>
     <main>
         <h1 style="text-align: center;">Galeri & Momen</h1>
         
         <div class="tab-container">
-            <button class="tab-btn" onclick="openTab('tab-momen')">Suasana & Momen</button>
-            <button class="tab-btn" onclick="openTab('tab-rasa')">Kisah di Balik Rasa</button>
+            <button class="tab-btn active" onclick="openTab(event, 'tab-momen')">Suasana & Momen</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab-rasa')">Kisah di Balik Rasa</button>
         </div>
 
         <section id="tab-momen" class="tab-content" style="display: block;">
             <p style="text-align: center; margin-bottom: 20px;">Intip fasilitas dan momen hangat di restoran kami.</p>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="img/suasana_resto.jpg" alt="Suasana Resto" onerror="this.src=''">
+                    <img src="img/suasana-restoran.webp" alt="Suasana Resto">
                     <p>Area Makan Nyaman</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="img/foto_keluarga.jpg" alt="Momen Keluarga" onerror="this.src=''">
+                    <img src="img/suasana-outdoor.jpg" alt="Suasana Outdoor">
+                    <p>Area Teras Terbuka</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/momen-hangat-keluarga.jpeg" alt="Momen Keluarga">
                     <p>Momen Hangat Keluarga</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="img/koki_dapur.jpg" alt="Dapur" onerror="this.src=''">
+                    <img src="img/dapur-restoran.jpg" alt="Dapur">
                     <p>Dapur Profesional</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/tim-restoran.jpg" alt="Tim Koki">
+                    <p>Chef Berpengalaman</p>
                 </div>
                 <div class="gallery-item">
                     <img src="img/live-akustik.jpg" alt="Akustik">
