@@ -35,15 +35,19 @@ tombol_edit.addEventListener("click", function () {
 function konfirmasiBooking() {
     const jumOrang = Number(jumlah_org);
 
+    cetak_booking.classList.remove("berhasil", "gagal");
+
     if (jumOrang > 50) {
         tampilkanData("Gagal");
+        cetak_booking.classList.add("gagal");
         pesan.textContent = "Maaf, booking sudah penuh melebihi 50 orang!";
         pesan.style.color = "red";
         return false;
     } else {
         tampilkanData("Berhasil");
+        cetak_booking.classList.add("berhasil");
         pesan.textContent = "Pemesanan berhasil!";
-        pesan.style.color = "green";
+        pesan.style.color = "white";
         return true;
     }
 }
