@@ -3,7 +3,7 @@ const nama = localStorage.getItem("nama");
 const tanggal = localStorage.getItem("tgl_booking");
 const jam = localStorage.getItem("jam_booking");
 const jumlah_org = localStorage.getItem("jum_orang");
-
+const acara = localStorage.getItem("acara");
 const cetak_booking = document.getElementById("booking-confirm");
 const pesan = document.getElementById("pesan");
 const tombol_edit = document.querySelector("#edit");
@@ -17,6 +17,7 @@ function tampilkanData(status) {
         <p>Tanggal: ${tanggal}</p>
         <p>Jam: ${jam}</p>
         <p>Jumlah orang: ${jumlah_org}</p>
+        <p>Acara: ${acara}</p>
         <p>Status Booking: ${status}</p>
     `;
 }
