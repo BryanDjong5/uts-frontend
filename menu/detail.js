@@ -6,36 +6,48 @@ function formatRupiah(number) {
     return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(number);
 }
 
-const menuItem = menuData.find(item => item.id === menuId);
+async function loadDetailFromAPI() {
+    try {
+        const response = await fetch('http://127.0.0.1:8000/api/menus');
+        const dataAPI = await response.json();
+        
+        const menuItem = dataAPI.find(item => item.id === menuId);
 
-if (menuItem) {
-    const ingredientsList = menuItem.ingredients.map(ing => `<li>${ing}</li>`).join('');
-    const formattedCategory = menuItem.category.replace('-', ' ');
-    
-    detailWrapper.innerHTML = `
-        <div class="detail-container">
-            <img src="${menuItem.image}" alt="${menuItem.name}" class="detail-img">
-            <div class="detail-info">
-                <span class="category-badge">${formattedCategory}</span>
-                <h1>${menuItem.name}</h1>
-                <p class="detail-price">${formatRupiah(menuItem.price)}</p>
-                <p class="rating">⭐ ${menuItem.rating}</p>
-                <p class="detail-desc">${menuItem.desc}</p>
-                <div class="ingredients">
-                    <h3>Ingredients:</h3>
-                    <ul>
-                        ${ingredientsList}
-                    </ul>
+        if (menuItem) {
+            const ingredientsList = menuItem.ingredients.map(ing => `<li>${ing}</li>`).join('');
+            const formattedCategory = menuItem.category.replace('-', ' ');
+            
+            detailWrapper.innerHTML = `
+                <div class="detail-container">
+                    <img src="${menuItem.image}" alt="${menuItem.name}" class="detail-img">
+                    <div class="detail-info">
+                        <span class="category-badge">${formattedCategory}</span>
+                        <h1>${menuItem.name}</h1>
+                        <p class="detail-price">${formatRupiah(menuItem.price)}</p>
+                        <p class="rating">⭐ ${menuItem.rating}</p>
+                        <p class="detail-desc">${menuItem.desc}</p>
+                        <div class="ingredients">
+                            <h3>Ingredients:</h3>
+                            <ul>
+                                ${ingredientsList}
+                            </ul>
+                        </div>
+                        <a href="menu.html" class="back-btn">Kembali ke Menu</a>
+                    </div>
                 </div>
-                <a href="menu.html" class="back-btn">Kembali ke Menu</a>
-            </div>
-        </div>
-    `;
-} else {
-    detailWrapper.innerHTML = `
-        <div class="detail-container" style="display: block; text-align: center;">
-            <h1>Menu tidak ditemukan</h1>
-            <a href="menu.html" class="back-btn" style="margin-top: 1rem;">Kembali ke Menu</a>
-        </div>
-    `;
+            `;
+        } else {
+            detailWrapper.innerHTML = `
+                <div class="detail-container" style="display: block; text-align: center;">
+                    <h1>Menu tidak ditemukan</h1>
+                    <a href="menu.html" class="back-btn" style="margin-top: 1rem;">Kembali ke Menu</a>
+                </div>
+            `;
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        detailWrapper.innerHTML = `<h1 style="text-align:center; margin-top:3rem;">Gagal terhubung ke server database</h1>`;
+    }
 }
+
+loadDetailFromAPI();
