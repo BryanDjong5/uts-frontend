@@ -5,28 +5,21 @@ const tgl_booking = document.getElementById("tglBooking");
 const jam_booking = document.getElementById("jamBooking");
 const jum_orang = document.getElementById("jumOrang");
 const acara = document.getElementById("acara");
-
 const tombol_booking = document.getElementById("tombol_booking");
 const hasil_validasi = document.getElementById("hasilValidasi");
 
 function sistemBooking() {
-
     if (!nama.value || !no_telp.value || !email.value || !tgl_booking.value || !jam_booking.value || !jum_orang.value || !acara.value) {
-
         hasil_validasi.innerHTML = "<p>Mohon lengkapi semua data booking!</p>";
         hasil_validasi.style.color = "red";
-
         return false;
-
+        
     } else if (new Date(tgl_booking.value + "T" + jam_booking.value) < new Date()) {
-
         hasil_validasi.innerHTML = "<p>Tanggal dan jam booking sudah lewat!</p>";
         hasil_validasi.style.color = "red";
-
         return false;
 
     } else {
-
         return true;
     }
 }
@@ -54,4 +47,8 @@ tombol_booking.addEventListener("click", function() {
 
     window.location.href = "../booking form/bookingConfirmation.html";
 });
+
+
+
+
 
