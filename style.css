@@ -289,3 +289,55 @@ footer {
         padding: 55px 5%;
     }
 }
+
+
+/* Navbar kedua untuk halaman Home, About Us, dan Contact */
+.sub-navbar {
+    background-color: #fff7ed;
+    border-bottom: 1px solid #eadfce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+}
+
+.sub-nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.sub-nav-menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 14px 4px 11px;
+    border-bottom: 2px solid transparent;
+}
+
+.sub-nav-menu a:hover,
+.sub-nav-menu a.active {
+    color: #f28c00;
+    border-bottom-color: #f28c00;
+}
+
+@media (max-width: 768px) {
+    .sub-navbar {
+        min-height: 44px;
+        padding: 0 5%;
+        overflow-x: auto;
+    }
+
+    .sub-nav-menu {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .sub-nav-menu a {
+        white-space: nowrap;
+        font-size: 13px;
+        padding: 12px 2px 9px;
+    }
+}
