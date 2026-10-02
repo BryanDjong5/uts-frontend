@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapur Senja - Contact</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Dapur Senja</div>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <div class="nav-menu" id="navMenu">
+            <a href="/index.html">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#reservation">Reservation</a>
+            <a href="#promo">Promo & Information</a>
+            <a href="#login">Login</a>
+        </div>
+    </nav>
+
+    <nav class="sub-navbar">
+        <div class="sub-nav-menu">
+            <a href="/index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <section class="contact-header">
+        <p class="contact-label">GET IN TOUCH</p>
+        <h1>Contact Us</h1>
+        <p>
+            Hubungi kami untuk informasi, reservasi, atau pertanyaan lainnya.
+            Kami siap membantu Anda.
+        </p>
+    </section>
+
+    <section class="contact-info-section">
+        <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Alamat</h3>
+            <p>Jl. Contoh No. 123<br>Jakarta, Indonesia</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Jakarta%2C%20Indonesia" target="_blank">
+                Lihat di Maps
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h3>Nomor Telepon</h3>
+            <p>021-1234-5678</p>
+            <a href="tel:02112345678">Hubungi Kami</a>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3>Email</h3>
+            <p>info@dapursenja.com</p>
+            <a href="mailto:info@dapursenja.com">Kirim Email</a>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">🕐</div>
+            <h3>Jam Operasional</h3>
+            <p>Senin - Minggu<br>10.00 - 22.00 WIB</p>
+        </div>
+    </section>
+
+    <section class="location-section">
+        <div class="location-text">
+            <p class="section-label">FIND US</p>
+            <h2>Lokasi Kami</h2>
+            <p>
+                Dapur Senja berusaha memberikan suasana yang nyaman dan
+                mudah dijangkau oleh pelanggan.
+            </p>
+
+            <div class="opening-box">
+                <h3>Jam Operasional</h3>
+                <div class="opening-row">
+                    <span>Senin - Jumat</span>
+                    <strong>10.00 - 22.00</strong>
+                </div>
+                <div class="opening-row">
+                    <span>Sabtu - Minggu</span>
+                    <strong>10.00 - 23.00</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <!-- Ganti lokasi di URL ini sesuai alamat restoran sebenarnya -->
+            <iframe
+                src="https://www.google.com/maps?q=Jakarta%2C%20Indonesia&output=embed"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section class="message-section">
+        <div class="section-title contact-title">
+            <p>CONTACT US</p>
+            <h2>Kirim Pesan</h2>
+            <span>Silakan kirim pertanyaan atau pesan kepada kami.</span>
+        </div>
+
+        <form class="contact-form" onsubmit="kirimPesan(event)">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukkan email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+            </div>
+
+            <button type="submit" class="button">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© <span id="tahun"></span> Dapur Senja. All rights reserved.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script>
+        function kirimPesan(event) {
+            event.preventDefault();
+            alert("Pesan berhasil dikirim. Terima kasih sudah menghubungi Dapur Senja!");
+            document.querySelector(".contact-form").reset();
+        }
+    </script>
+
+</body>
+</html>

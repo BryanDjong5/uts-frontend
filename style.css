@@ -15,8 +15,13 @@ body {
     padding-top: 118px;
 }
 
+/* =========================
+   NAVBAR UTAMA
+========================= */
+
 .navbar {
     height: 70px;
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -26,9 +31,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-
     z-index: 1000;
+
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -40,6 +44,7 @@ body {
 
 .nav-menu {
     display: flex;
+    align-items: center;
     gap: 30px;
 }
 
@@ -48,10 +53,138 @@ body {
     color: #333;
     font-size: 15px;
     font-weight: bold;
+    line-height: 1;
 }
 
 .nav-menu a:hover {
     color: #f28c00;
+}
+
+/* Tombol dropdown mobile */
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+    line-height: 1;
+}
+
+/* =========================
+   NAVBAR KEDUA
+========================= */
+
+.sub-navbar {
+    height: 48px;
+    width: 100%;
+    background-color: #fff8ef;
+    border-bottom: 1px solid #eee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 999;
+}
+
+.sub-nav-menu {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.sub-nav-menu a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+
+    padding: 0 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.sub-nav-menu a:hover,
+.sub-nav-menu a.active {
+    color: #f28c00;
+    border-bottom-color: #f28c00;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 110px;
+    }
+
+    .navbar {
+        height: 65px;
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+
+        width: 100%;
+        background-color: white;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.10);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 14px 5%;
+        border-top: 1px solid #eee;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .sub-navbar {
+        height: 45px;
+        top: 65px;
+        left: 0;
+        width: 100%;
+    }
+
+    .sub-nav-menu {
+        gap: 25px;
+    }
+
+    .sub-nav-menu a {
+        font-size: 13px;
+        padding: 0 3px;
+    }
 }
 
 .hero {
@@ -295,8 +428,6 @@ footer {
     }
 }
 
-
-/* Navbar kedua untuk halaman Home, About Us, dan Contact */
 .sub-navbar {
     height: 48px;
     background-color: #fff8ef;

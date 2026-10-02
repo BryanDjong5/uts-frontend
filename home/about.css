@@ -1,35 +1,3 @@
-/* =========================
-   ABOUT US
-========================= */
-
-.sub-navbar {
-    height: 48px;
-    background-color: #fff8ef;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 38px;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-}
-
-.sub-navbar a {
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 15px 0;
-}
-
-.sub-navbar a:hover,
-.sub-navbar a.active {
-    color: #f28c00;
-}
-
 .about-header {
     text-align: center;
     padding: 65px 8% 55px;
@@ -253,20 +221,7 @@
 }
 
 @media (max-width: 768px) {
-    .sub-navbar {
-        height: 45px;
-        top: 65px;
-        left: 0;
-        width: 100%;
-        gap: 22px;
-        padding: 0 15px;
-    }
-
-    .sub-navbar a {
-        font-size: 13px;
-    }
-
-    .about-header {
+.about-header {
         padding: 50px 5% 45px;
     }
 
