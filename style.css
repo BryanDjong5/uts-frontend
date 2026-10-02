@@ -12,6 +12,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f8f8f8;
     color: #333;
+    padding-top: 118px;
 }
 
 .navbar {
@@ -21,9 +22,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 8%;
-    position: sticky;
+
+    position: fixed;
     top: 0;
-    z-index: 10;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -293,12 +298,21 @@ footer {
 
 /* Navbar kedua untuk halaman Home, About Us, dan Contact */
 .sub-navbar {
-    background-color: #fff7ed;
-    border-bottom: 1px solid #eadfce;
+    height: 48px;
+    background-color: #fff8ef;
+    border-bottom: 1px solid #eee;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 48px;
+    gap: 38px;
+
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+
+    z-index: 999;
 }
 
 .sub-nav-menu {

@@ -1,0 +1,305 @@
+/* =========================
+   ABOUT US
+========================= */
+
+.sub-navbar {
+    height: 48px;
+    background-color: #fff8ef;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.sub-navbar a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.sub-navbar a:hover,
+.sub-navbar a.active {
+    color: #f28c00;
+}
+
+.about-header {
+    text-align: center;
+    padding: 65px 8% 55px;
+    background-color: #fff;
+}
+
+.about-label {
+    color: #f28c00;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.about-header h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.about-header > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.7;
+}
+
+.about-section {
+    padding: 75px 8%;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.history-text {
+    max-width: 650px;
+}
+
+.section-label {
+    color: #f28c00;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.history-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.history-text p:not(.section-label) {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.history-box {
+    width: 280px;
+    min-height: 230px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #fff0dc, #f8c36a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+    padding: 25px;
+}
+
+.history-box span {
+    font-size: 48px;
+    font-weight: bold;
+    color: #8b4a18;
+    margin-bottom: 10px;
+}
+
+.history-box p {
+    color: #704214;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.vision-section {
+    padding: 75px 8%;
+    background-color: white;
+}
+
+.about-title {
+    margin-bottom: 35px;
+}
+
+.about-title h2 {
+    font-size: 32px;
+}
+
+.vision-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.value-card {
+    width: 330px;
+    padding: 28px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.value-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.value-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.gallery-section {
+    padding: 75px 8%;
+    background-color: #f8f8f8;
+}
+
+.restaurant-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.restaurant-photo {
+    width: 30%;
+    min-width: 240px;
+    height: 230px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+}
+
+.photo-one {
+    background: linear-gradient(135deg, #9d6b3d, #4b2d18);
+}
+
+.photo-two {
+    background: linear-gradient(135deg, #d79852, #704214);
+}
+
+.photo-three {
+    background: linear-gradient(135deg, #e9b866, #7b4a21);
+}
+
+.team-section {
+    padding: 75px 8%;
+    background-color: white;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+    padding-bottom: 22px;
+}
+
+.team-photo {
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    margin-bottom: 18px;
+}
+
+.chef-one {
+    background-color: #fff0dc;
+}
+
+.chef-two {
+    background-color: #ffe7d2;
+}
+
+.chef-three {
+    background-color: #fff2c9;
+}
+
+.team-card h3 {
+    font-size: 19px;
+    margin-bottom: 6px;
+}
+
+.team-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .sub-navbar {
+        height: 45px;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        gap: 22px;
+        padding: 0 15px;
+    }
+
+    .sub-navbar a {
+        font-size: 13px;
+    }
+
+    .about-header {
+        padding: 50px 5% 45px;
+    }
+
+    .about-header h1 {
+        font-size: 34px;
+    }
+
+    .about-section {
+        padding: 55px 5%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .history-box {
+        width: 100%;
+    }
+
+    .vision-section,
+    .gallery-section,
+    .team-section {
+        padding: 55px 5%;
+    }
+
+    .restaurant-photo {
+        width: 100%;
+    }
+
+    .value-card {
+        width: 100%;
+    }
+
+    .team-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
