@@ -48,7 +48,8 @@ function konfirmasiBooking() {
         tampilkanData("Berhasil");
         cetak_booking.classList.add("berhasil");
         pesan.textContent = "Pemesanan berhasil!";
-        pesan.style.color = "white";
+        pesan.style.color = "green";
+        window.location.href="/promo/promotions.html";
         return true;
     }
 }
