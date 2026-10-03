@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotions & FAQ - Dapur Senja</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Dapur Senja</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../menu/menu.html">Menu</a></li>
+            <li><a href="promotions.html" class="active">Promo & Info</a></li>
+            <li><a href="../booking/reservasi/reservasi.html">Reservation</a></li>
+            <li><a href="../login.html">Account</a></li>
+        </ul>
+    </nav>
+
+    <header class="menu-header">
+        <h1>Promo Makanan & Penawaran Spesial</h1>
+        <p>Klaim vouchernya sekarang dan nikmati harga spesial untuk menu andalan Dapur Senja!</p>
+    </header>
+
+    <div class="filter-container">
+        <a href="promotions.html" class="filter-btn active">Promotions</a>
+        <a href="events.html" class="filter-btn">Events</a>
+        <a href="gallery.html" class="filter-btn">Gallery</a>
+        <a href="reviews.html" class="filter-btn">Reviews</a>
+    </div>
+
+    <main>
+        <section class="promo-card" style="border-left: 4px solid #ff8c00;">
+            <h2>Weekend Santai (Diskon 15%)</h2>
+            <p>Nikmati akhir pekan Anda! Setiap pembelian menu makanan apa saja, dapatkan diskon 15% plus pilihan Jus Strawberry atau Jus Alpukat GRATIS.</p>
+            <p><strong>Masa Berlaku:</strong> Setiap Sabtu & Minggu (Berlaku Sepanjang Tahun)</p>
+            <button onclick="alert('INFORMASI KLAIM MANUAL:\n\nKode Promo: WEEKEND15\n\nTunjukkan kode promo ini langsung kepada kasir kami sebelum Anda membayar pesanan. Jangan lupa sebutkan pilihan jus gratis Anda!')">Klaim Voucher</button>
+        </section>
+
+        <section class="promo-card" style="border-left: 4px solid #ff8c00;">
+            <h2>Promo Spesial Bulanan (Oktober)</h2>
+            <p>Transaksi minimal Rp 100.000, langsung dapat potongan Rp 15.000 untuk kunjungan Anda berikutnya.</p>
+            <p><strong>Masa Berlaku:</strong> 1 - 31 Oktober 2026</p>
+            <button onclick="alert('INFORMASI KLAIM MANUAL:\n\nKode Promo: OKT15K\n\nPromo ini berlaku untuk transaksi berikutnya. Simpan struk transaksi Anda hari ini (minimal Rp 100.000) dan tunjukkan kepada kasir saat Anda datang kembali.')">Klaim Voucher</button>
+        </section>
+
+        <section class="promo-card flash-sale">
+            <h2>Flash Sale 10.10 (Menu Cuma 15rb!)</h2>
+            <p id="countdown" style="font-weight: bold; color: #ff8c00; font-size: 18px;"></p>
+            <p>Spesial tanggal kembar! Nikmati Nasi Goreng Spesial atau Ayam Bakar hanya seharga Rp 15.000.</p>
+            <button onclick="alert('INFORMASI KLAIM MANUAL:\n\nKode Promo: FLASH1010\n\nHanya berlaku pada tanggal 10 Oktober 2026! Tunjukkan pesan ini ke kasir sebelum memesan.')">Klaim Voucher</button>
+        </section>
+
+        <section class="promo-card" style="border-left: 4px solid #ffcc00;">
+            <h2>Promo Hari Kelahiran (Diskon 10%)</h2>
+            <p>Rayakan hari spesial Anda bersama kami! Dapatkan diskon 10% untuk seluruh pesanan tanpa minimum transaksi.</p>
+            <p><strong>Masa Berlaku:</strong> Berlaku tepat di hari ulang tahun Anda.</p>
+            <button onclick="alert('INFORMASI KLAIM MANUAL:\n\nKlaim Promo Ulang Tahun berhasil!\n\nPromo ini HANYA BERLAKU tepat pada hari kelahiran Anda. Silakan tunjukkan KTP/Identitas asli Anda langsung ke kasir kami untuk diverifikasi.')" style="background-color: #ffcc00; color: #333;">Klaim Promo Ulang Tahun</button>
+        </section>
+
+        <section class="promo-card" style="border-left: 4px solid #4CAF50;">
+            <h2>Paket Pelajar & Mahasiswa (Diskon 20%)</h2>
+            <p>Tunjukkan kartu pelajar atau KTM aktif kamu dan nikmati potongan harga 20% untuk semua menu tanpa terkecuali.</p>
+            <p><strong>Masa Berlaku:</strong> Senin - Jumat (Tidak berlaku di hari libur nasional)</p>
+            <button onclick="alert('INFORMASI KLAIM MANUAL:\n\nPromo Mahasiswa/Pelajar tidak menggunakan kode voucher di website.\n\nAnda cukup membawa dan menunjukkan Kartu Pelajar atau KTM fisik yang masih aktif kepada kasir kami sebelum melakukan pembayaran.')" style="background-color: #4CAF50; color: white;">Cek Syarat Pelajar</button>
+        </section>
+
+        <section class="faq-section">
+            <h2 style="text-align: center; margin-top: 50px;">Tanya Jawab Syarat & Ketentuan Promo</h2>
+            <div class="faq-container">
+                <button class="faq-btn" onclick="toggleFaq(this)">Bagaimana cara menggunakan kode promo dari website ini?</button>
+                <div class="faq-content"><p>Semua promo diproses secara manual. Anda cukup menekan tombol klaim pada website, kemudian tunjukkan kode atau layar HP Anda secara langsung kepada staf kasir kami sebelum melakukan pembayaran.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Apakah kode voucher promo bisa digabungkan?</button>
+                <div class="faq-content"><p>Tidak bisa. Dalam satu struk transaksi, Anda hanya dapat memilih dan menggunakan satu penawaran promo yang memberikan keuntungan terbesar bagi Anda.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Apakah Promo Spesial Bulanan akan selalu sama setiap bulannya?</button>
+                <div class="faq-content"><p>Tidak. Kami rutin mengganti jenis Promo Bulanan setiap tanggal 1 di awal bulan untuk memberikan variasi penawaran menarik. Pantau terus halaman ini untuk promo terbaru.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Apa syarat wajib untuk Promo Hari Kelahiran?</button>
+                <div class="faq-content"><p>Diskon 10% ini hanya berlaku tepat pada tanggal kelahiran Anda (H-0). Kasir kami wajib memverifikasinya melalui KTP asli atau identitas resmi lainnya yang memiliki tanggal lahir. Tidak berlaku untuk hari sebelum atau sesudah ulang tahun.</p></div>
+                
+                <button class="faq-btn" onclick="toggleFaq(this)">Apakah Promo Pelajar berlaku untuk mahasiswa yang sedang skripsi/cuti?</button>
+                <div class="faq-content"><p>Selama Kartu Tanda Mahasiswa (KTM) Anda memiliki masa berlaku (tahun akademik) yang masih aktif tercetak di kartu, kasir kami akan memproses diskon 20% tersebut.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Apakah promo diskon berlaku untuk dibawa pulang (Takeaway)?</button>
+                <div class="faq-content"><p>Semua promo yang tertera di website saat ini eksklusif berlaku untuk makan di tempat (Dine-in) agar kualitas dan kehangatan hidangan tetap terjaga saat dinikmati.</p></div>
+
+                <button class="faq-btn" onclick="toggleFaq(this)">Apakah transaksi menggunakan promo bisa pisah struk (Split Bill)?</button>
+                <div class="faq-content"><p>Mohon maaf, demi kelancaran sistem pencatatan kasir, satu meja yang menggunakan promo wajib melakukan pembayaran gabungan dalam satu struk (tidak bisa di-split).</p></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p style="text-align: center;">&copy; 2026 Dapur Senja. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

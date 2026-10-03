@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Confirmation</title>
+    <title>Dapur Senja</title>
     <link rel="stylesheet" href="bookingConfirmation.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">Dapur Senja</div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/menu/menu.html">Menu</a></li>
+            <li><a href="/promo/promotions.html" class="active">Promo & Info</a></li>
+            <li><a href="../reservasi/reservasi.html">Reservation</a></li>
+            <li><a href="/login.html">Account</a></li>
+        </ul>
+    </nav>
     <div id="booking-confirm">
-        <p>Nomor Booking: </p>
-        <p>Nama: </p>
-        <p>Tanggal: </p>
-        <p>Jam: </p>
-        <p>Jumlah orang: </p>
-        <p>Status Booking: </p>
-        <button type="button" id="edit">Edit</button>
+        <h1>Booking Confirmation</h1>
+    </div>
+    <div id="pesan"></div>
+    <div class="apakah-confirm">
+        <button type="button" id="confirmAkhir">Confirm</button>
+        <button type="button" id="edit">Edit/Cancel</button>
     </div>
     <script src="bookingConfirmation.js"></script>
 </body>
