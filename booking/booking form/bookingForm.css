@@ -1,6 +1,5 @@
 body {
-    background-image: url('../img/booking.webp');
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/booking.webp');
     background-size: cover;
 }
 
@@ -13,7 +12,7 @@ body {
 }
 
 .booking-input h1 {
-    color: black;
+    color: white;
 }
 
 .booking-input {
@@ -27,6 +26,17 @@ body {
     left: 65%;
 }
 
-#acara {
+.booking-input label  {
     color: white;
+}
+
+#tombol_booking {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px solid white;
+    color: white;
+    background-color: blue;
+    width: 25%;
+    left: 15%;
 }
