@@ -1,4 +1,3 @@
-/* ---------- Storage (aman kalau storage diblokir) ---------- */
 var mem={};
 function sget(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return k in mem?mem[k]:d}}
 function sset(k,v){mem[k]=v;try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
@@ -14,9 +13,9 @@ function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{"&":"&amp
 var $=function(s){return document.querySelector(s)};
 
 function authShell(title,sub,body,alt,heroTitle){
-return '<div class="auth"><section class="hero"><div class="brand"><span class="dot"></span>Dapur Senja</div>'+
+return '<div class="auth"><section class="hero"><div class="brand"><img class="logo" src="images/logo.png" alt="Dapur Senja"></div>'+
 '<div><h1>'+heroTitle+'</h1><p>Masakan rumahan Nusantara, meja yang hangat, dan reservasi yang tidak ribet.</p></div>'+
-'<small>Buka setiap hari, 11.00–22.00</small></section>'+
+'<div class="chip"><b>Buka setiap hari</b><span>11.00–22.00 · Kemang · Senayan · PIK</span></div></section>'+
 '<section class="formside"><div class="form"><h2>'+title+'</h2><p class="sub">'+sub+'</p>'+body+'<p class="alt">'+alt+'</p></div></section></div>'}
 function pwField(id,label,ph,ac){return '<div class="field"><label for="'+id+'">'+label+'</label><div class="pw"><input class="inp" id="'+id+'" type="password" placeholder="'+ph+'" autocomplete="'+ac+'"><button type="button" data-eye="'+id+'">Lihat</button></div><div class="msg" id="m-'+id+'"></div></div>'}
 function field(id,label,type,ph,ac){return '<div class="field"><label for="'+id+'">'+label+'</label><input class="inp" id="'+id+'" type="'+type+'" placeholder="'+ph+'" autocomplete="'+ac+'"><div class="msg" id="m-'+id+'"></div></div>'}
