@@ -3,23 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews - Restoran Kami</title>
+    <title>Reviews - Dapur Senja</title>
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="promotions.html">Promotions</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="reviews.html" class="nav-active">Reviews</a></li>
+    <nav class="navbar">
+        <div class="logo">Dapur Senja</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../menu/menu.html">Menu</a></li>
+            <li><a href="promotions.html" class="active">Promo & Info</a></li>
+            <li><a href="../booking/reservation.html">Reservation</a></li>
+            <li><a href="../login.html">Account</a></li>
         </ul>
     </nav>
-    <main>
-        <h1 style="text-align: center;">Apa Kata Mereka?</h1>
-        <p style="text-align: center; margin-bottom: 40px;">Ulasan asli dari para pelanggan setia Restoran Kami.</p>
 
+    <header class="menu-header">
+        <h1>Apa Kata Mereka?</h1>
+        <p>Ulasan asli dari para pelanggan setia Dapur Senja</p>
+    </header>
+
+    <div class="filter-container">
+        <a href="promotions.html" class="filter-btn">Promotions</a>
+        <a href="events.html" class="filter-btn">Events</a>
+        <a href="gallery.html" class="filter-btn">Gallery</a>
+        <a href="reviews.html" class="filter-btn active">Reviews</a>
+    </div>
+
+    <main>
         <div class="review-grid" id="review-list">
             <div class="review-card">
                 <h3>Budi Santoso</h3>
@@ -34,25 +49,25 @@
                 <p class="stars">⭐⭐⭐⭐⭐</p>
                 <div class="tag-container">
                     <span class="menu-tag">Nasi Goreng Spesial</span>
-                    <span class="menu-tag">Es Lemon Tea</span>
+                    <span class="menu-tag">Lemon Tea</span>
                 </div>
-                <p>"Pas banget dapet promo Weekend Kenyang. Makan enak berempat jadi jauh lebih hemat. Pelayanannya ramah banget!"</p>
+                <p>"Pas banget dapet promo Weekend Santai. Makan enak berempat jadi jauh lebih hemat. Pelayanannya ramah banget!"</p>
             </div>
             <div class="review-card">
                 <h3>Dimas Anggara</h3>
                 <p class="stars">⭐⭐⭐⭐</p>
                 <div class="tag-container">
-                    <span class="menu-tag">Choco Fondant</span>
+                    <span class="menu-tag">Choco Cake</span>
                 </div>
-                <p>"Choco fondant-nya lumer di mulut! Sayang kemarin pas ke sana agak antri. Tapi wajar sih, makanannya emang enak."</p>
+                <p>"Cake-nya lumer di mulut! Sayang kemarin pas ke sana agak antri. Tapi wajar sih, makanannya emang enak."</p>
             </div>
             <div class="review-card">
                 <h3>Eka Putri</h3>
                 <p class="stars">⭐⭐⭐⭐⭐</p>
                 <div class="tag-container">
-                    <span class="menu-tag">Jus Alpukat</span>
+                    <span class="menu-tag">Matcha Latte</span>
                 </div>
-                <p>"Panggung live akustiknya bikin suasana makan malam jadi romantis. Jus alpukatnya kental dan manisnya pas."</p>
+                <p>"Panggung live akustiknya bikin suasana makan malam jadi romantis. Matcha Latte-nya kerasa banget premiumnya."</p>
             </div>
             <div class="review-card">
                 <h3>Fahmi Reza</h3>
@@ -66,9 +81,9 @@
                 <h3>Gita Permata</h3>
                 <p class="stars">⭐⭐⭐⭐⭐</p>
                 <div class="tag-container">
-                    <span class="menu-tag">Nasi Goreng Spesial</span>
+                    <span class="menu-tag">Spaghetti Bolognese</span>
                 </div>
-                <p>"Porsi nasi goreng spesialnya brutal, rasanya nendang banget ala bintang lima. Worth it banget harganya."</p>
+                <p>"Nyobain menu barunya Spageti, ternyata sausnya enak banget ala restoran Italia beneran. Worth it!"</p>
             </div>
             <div class="review-card">
                 <h3>Hadi Kusuma</h3>
@@ -82,15 +97,15 @@
                 <h3>Intan Sari</h3>
                 <p class="stars">⭐⭐⭐⭐⭐</p>
                 <div class="tag-container">
-                    <span class="menu-tag">Es Campur</span>
+                    <span class="menu-tag">Tiramisu</span>
                 </div>
-                <p>"Es campurnya seger banget buat siang-siang yang panas. Pelayanan cepat dan mas-masnya tanggap."</p>
+                <p>"Tiramisunya the best buat penutup makan malam. Pelayanan cepat dan mas-masnya tanggap."</p>
             </div>
             <div class="review-card">
                 <h3>Joko Anwar</h3>
                 <p class="stars">⭐⭐⭐⭐⭐</p>
                 <div class="tag-container">
-                    <span class="menu-tag">Kentang Goreng</span>
+                    <span class="menu-tag">French Fries</span>
                 </div>
                 <p>"Nobar bola di sini seru parah, layarnya gede, cemilan kentang gorengnya pas buat nemenin teriak-teriak."</p>
             </div>
@@ -100,7 +115,7 @@
                 <div class="tag-container">
                     <span class="menu-tag">Mie Goreng</span>
                 </div>
-                <p>"Mie gorengnya the best! Wangi wok hei nya beneran kerasa banget di lidah. Tempatnya super cozy."</p>
+                <p>"Mie gorengnya mantap! Wangi wok hei nya beneran kerasa banget di lidah. Tempatnya super cozy."</p>
             </div>
         </div>
 
@@ -127,19 +142,23 @@
                     <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Mie Goreng</button>
                     <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Rendang Sapi</button>
                     <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Sate Ayam</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Spaghetti Bolognese</button>
                 </div>
 
                 <p style="margin: 0; font-size: 14px; color: #555;">Pilih Camilan & Minuman (Bisa lebih dari 1):</p>
                 <div class="tag-selector">
-                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Kentang Goreng</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">French Fries</button>
                     <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Lumpia Goreng</button>
                     <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Tempe Mendoan</button>
                     <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Roti Bakar</button>
-                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Pisang Keju</button>
-                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Choco Fondant</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Pisang Bakar</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Choco Cake</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Tiramisu</button>
                     <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Es Campur</button>
                     <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Jus Alpukat</button>
-                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Jus Strawberry</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Berry Smoothies</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Matcha Latte</button>
+                    <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Lemon Tea</button>
                     <button type="button" class="tag-select-btn" onclick="toggleTag(this)">Americano</button>
                 </div>
 
@@ -149,7 +168,7 @@
         </section>
     </main>
     <footer>
-        <p style="text-align: center;">&copy; 2026 Restoran Kami. All rights reserved.</p>
+        <p style="text-align: center;">&copy; 2026 Dapur Senja. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

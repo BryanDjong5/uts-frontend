@@ -4,7 +4,10 @@ window.alert = function(msg) {
     const box = document.createElement('div');
     box.className = 'custom-alert-box';
     const text = document.createElement('p');
-    text.innerText = msg;
+    
+    const formattedMsg = msg.replace(/\n/g, '<br>');
+    text.innerHTML = formattedMsg;
+    
     const btn = document.createElement('button');
     btn.className = 'custom-alert-btn';
     btn.innerText = 'OK';
@@ -49,12 +52,6 @@ function toggleFaq(btn) {
     } else {
         content.style.display = "block";
     }
-}
-
-function submitVip(evt) {
-    evt.preventDefault();
-    alert("Pendaftaran berhasil! Silakan cek email Anda dalam 5 menit ke depan untuk mengklaim Barcode Voucher Welcome Diskon 10%.");
-    document.getElementById("vipForm").reset();
 }
 
 function toggleTag(btn) {
