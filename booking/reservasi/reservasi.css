@@ -69,3 +69,92 @@ body {
     height: 40px;
     margin-left: 220px;
 }
+
+@media (max-width: 1024px) {
+    .reservasi {
+        width: 70%;
+        left: 15%;
+        top: 15%;
+        bottom: 15%;
+        height: auto;
+    }
+
+    .reservasi h1 {
+        font-size: 35px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .gambar-jam img,
+    .gambar-price img {
+        width: 65px;
+    }
+
+    .gambar-meja img,
+    .gambar-antri img {
+        width: 19%;
+    }
+
+    .input-reservasi {
+        width: 80%;
+        margin-left: 10%;
+        top: 28%;
+    }
+
+    #tombol-reservasi {
+        margin-left: 0;
+        align-self: center;
+        width: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    .reservasi {
+        box-sizing: border-box;
+        width: 92%;
+        left: 4%;
+        top: 5%;
+        bottom: 5%;
+        height: auto;
+        padding: 12px;
+        border-width: 3px;
+    }
+
+    .reservasi h1 {
+        font-size: 22px;
+        margin: 70px 0 0 0;   
+        text-align: center;
+    }
+
+    .gambar-jam img,
+    .gambar-price img {
+        width: 40px;
+        top: 10px;
+    }
+
+    .gambar-jam img { left: 10px; }
+    .gambar-price img { right: 10px; }
+
+    .gambar-meja img,
+    .gambar-antri img {
+        width: 25%;
+        top: auto;
+        bottom: 0;
+    }
+
+    .input-reservasi {
+        box-sizing: border-box;
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        top: 130px;
+        gap: 10px;
+    }
+
+    #tombol-reservasi {
+        margin-left: 0;
+        align-self: center;
+        width: 100%;
+        max-width: 200px;
+    }
+}

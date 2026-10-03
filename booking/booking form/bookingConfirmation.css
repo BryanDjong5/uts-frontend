@@ -49,3 +49,37 @@ body {
     border-color: red;
     background-color: #ffd6d6;   
 }
+
+@media (max-width: 1024px){
+    body {
+        background:
+        linear-gradient(to right, aqua 55%, transparent 55%),
+            url('../img/resto.jpg') no-repeat center / cover;
+    }
+
+    #booking-confirm {
+        width: 50%;
+        margin-top: 15vh;
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 600px){
+    body {
+        background:
+        linear-gradient(to bottom, aqua 55%, transparent 55%),
+            url('../img/resto.jpg') no-repeat center / cover;
+    }
+
+    #booking-confirm {
+        width: 90%;
+        margin-top: 9vh auto 0 auto;
+        padding: 15px;
+        border-width: 3px;
+
+    .apakah-confirm {
+        flex-direction: column;
+        gap: 10px;
+    }
+    }
+}
