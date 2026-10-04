@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +10,14 @@
     <nav class="navbar">
         <div class="logo">Dapur Senja</div>
         <ul class="nav-links">
-            <li><a href="../../home/home.html">Home</a></li>
-            <li><a href="../../menu/menu.html">Menu</a></li>
-            <li><a href="../../promo/promotions.html" class="active">Promo & Info</a></li>
-            <li><a href="reservasi.html">Reservation</a></li>
-            <li><a href="../../index.html">Account</a></li>
+            <li><a href="/home/home.html">Home</a></li>
+            <li><a href="/menu/menu.html">Menu</a></li>
+            <li><a href="/promo/promotions.html">Promo & Info</a></li>
+            <li><a href="/booking/reservasi/reservasi.html" class="active">Reservation</a></li>
+            <li><a href="/index.html">Account</a></li>
         </ul>
     </nav>
+
     <img src="../img/jam.png">
     <div class="gambar-meja">
         <img src="../img/meja_reservasi.png">
@@ -27,17 +28,19 @@
     <div class="gambar-price">
         <img src="../img/price.png">
     </div>
+
     <div class="reservasi">
         <h1>Form Reservasi</h1>
-    <div class="input-reservasi">
-        <input type="text" id="penjelasan-reservasi" placeholder="Masukkan tujuan reservasi">
-        <input type="date" id="tgl-reservasi" placeholder="Masukkan tanggal reservasi">
-        <input type="time" id="jam-reservasi" placeholder="Masukkan jam reservasi">
-        <input type="number" id="jum-pelanggan" placeholder="Masukkan jumlah orang">
-        <button type="submit" id="tombol-reservasi">Reservasi</button>
-        <p id="pesan-status"></p>
+        <div class="input-reservasi">
+            <input type="text" id="penjelasan-reservasi" placeholder="Masukkan tujuan reservasi">
+            <input type="date" id="tgl-reservasi" placeholder="Masukkan tanggal reservasi">
+            <input type="time" id="jam-reservasi" placeholder="Masukkan jam reservasi">
+            <input type="number" id="jum-pelanggan" placeholder="Masukkan jumlah orang">
+            <button type="submit" id="tombol-reservasi">Reservasi</button>
+            <p id="pesan-status"></p>
+        </div>
     </div>
-    </div>
+
     <script src="reservasi.js"></script>
 </body>
 </html>
