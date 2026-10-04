@@ -271,6 +271,7 @@ label {
     color: var(--err);
 }
 
+/* ===== Halaman Profil ===== */
 .top {
     background: var(--pine);
     color: #F3F6F4;
@@ -278,6 +279,22 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.topnav {
+    display: flex;
+    gap: 24px;
+    margin-left: auto;
+    margin-right: 24px;
+}
+.topnav a {
+    color: #DCE8E2;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color .15s;
+}
+.topnav a:hover {
+    color: var(--gold);
 }
 .top button {
     background: transparent;
@@ -432,6 +449,17 @@ dd {
     }
     .wrap {
         grid-template-columns: 1fr;
+    }
+    .top {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .topnav {
+        order: 3;
+        width: 100%;
+        margin: 0;
+        gap: 18px;
+        flex-wrap: wrap;
     }
 }
 

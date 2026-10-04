@@ -1,4 +1,5 @@
 function loginPage(){
+if(me()){location.href="profile.html";return}
 var flash=sget("ds_flash",null);sset("ds_flash",null);
 $("#app").innerHTML=authShell("LOGIN/MASUK","Selamat datang kembali. Masuk untuk melihat profile dan reservasi anda.",
 (flash?'<div class="notice">'+esc(flash)+'</div>':'')+'<div id="top"></div>'+
