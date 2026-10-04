@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Utama - Dapur Senja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Dapur Senja</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="../promo/promotions.html">Promo & Info</a></li>
+            <li><a href="../booking/reservation.html">Reservation</a></li>
+            <li><a href="../login.html">Account</a></li>
+        </ul>
+    </nav>
+
+    <header class="menu-header">
+        <h1>Menu Spesial Kami</h1>
+        <p>Jelajahi hidangan terbaik dari koki kami</p>
+    </header>
+
+    <div class="controls-container">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Cari makanan atau minuman...">
+        </div>
+        <div class="sort-box">
+            <select id="sort-input">
+                <option value="default">Urutkan: Default</option>
+                <option value="lowest">Harga: Termurah</option>
+                <option value="highest">Harga: Termahal</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="filter-container">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="appetizer">Appetizer</button>
+        <button class="filter-btn" data-category="main-course">Main Course</button>
+        <button class="filter-btn" data-category="dessert">Dessert</button>
+        <button class="filter-btn" data-category="drinks">Drinks</button>
+    </div>
+
+    <div class="order-summary-bar" id="order-bar" style="display: none;">
+        <span>Pesanan Dipilih: <strong id="order-count">0</strong> item</span>
+        <button id="checkout-btn">Pesan</button>
+    </div>
+
+    <main class="menu-container" id="menu-container"></main>
+
+    <button id="back-to-top" title="Kembali ke atas">↑</button>
+    
+    <script src="menu.js"></script>
+</body>
+</html>

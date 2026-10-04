@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Dapur Senja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Dapur Senja</div>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <div class="nav-menu" id="navMenu">
+            <a href="home.html">Home</a>
+            <a href="/menu/menu.html">Menu</a>
+            <a href="/promo/promotions.html">Promo & Info</a>
+            <a href="/booking/reservasi/reservasi.html">Reservation</a>
+            <a href="/login.html">Account</a>
+        </div>
+    </nav>
+
+    <nav class="sub-navbar">
+        <div class="sub-nav-menu">
+            <a href="home.html">Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="about-header">
+        <p class="about-label">TENTANG KAMI</p>
+        <h1>About Us</h1>
+        <p>
+            Mengenal lebih dekat Dapur Senja, tempat kami menghadirkan hidangan lezat, suasana hangat, dan pengalaman makan yang berkesan.
+        </p>
+    </section>
+
+    <section class="about-section">
+        <div class="history-text">
+            <p class="section-label">OUR STORY</p>
+            <h2>Sejarah Restoran</h2>
+
+            <p>
+                Dapur Senja hadir dari kecintaan terhadap kuliner dan keinginan untuk menciptakan tempat makan yang nyaman untuk semua kalangan.
+            </p>
+
+            <p>
+                Sejak berdiri pada tahun 2018, Dapur Senja terus berkembang dengan menghadirkan berbagai hidangan pilihan dan menjaga kualitas rasa serta pelayanan. Bagi kami, setiap hidangan bukan hanya tentang makanan, tetapi juga tentang menciptakan momen hangat bersama orang-orang terdekat.
+            </p>
+        </div>
+
+        <div class="history-box">
+            <span>2018</span>
+            <p>Awal berdirinya Dapur Senja</p>
+        </div>
+    </section>
+
+    <section class="vision-section">
+        <div class="section-title about-title">
+            <p>OUR VALUES</p>
+            <h2>Visi & Misi</h2>
+            <span>Nilai yang menjadi dasar dalam menjalankan restoran.</span>
+        </div>
+
+        <div class="vision-container">
+            <div class="value-card">
+                <div class="value-icon">🎯</div>
+                <h3>Visi</h3>
+                <p>
+                    Menjadi restoran yang dikenal karena cita rasa,
+                    kualitas makanan, dan pelayanan yang baik.
+                </p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">⭐</div>
+                <h3>Misi</h3>
+                <p>
+                    Menyajikan makanan berkualitas, menjaga kebersihan,
+                    serta memberikan pelayanan yang ramah kepada pelanggan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="section-title about-title">
+            <p>OUR RESTAURANT</p>
+            <h2>Foto Restoran</h2>
+            <span>Suasana yang nyaman untuk menikmati makanan bersama.</span>
+        </div>
+
+        <div class="restaurant-gallery">
+            <div class="restaurant-photo photo-one">
+                <img src="img/resto.webp" alt="Foto Restoran 1">
+            </div>
+
+            <div class="restaurant-photo photo-two">
+                <img src="img/outdoor.jpg" alt="Foto Restoran 2">
+            </div>
+
+            <div class="restaurant-photo photo-three">
+                <img src="img/akustik.jpg" alt="Foto Restoran 3">
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="section-title about-title">
+            <p>OUR TEAM</p>
+            <h2>Chef & Team</h2>
+            <span>Orang-orang yang bekerja di balik setiap hidangan.</span>
+        </div>
+
+        <div class="team-container">
+            <div class="team-card">
+                <div class="team-photo chef-one">
+                    <img src="img/chef1.jpg" alt="Chef Andi">
+                </div>
+                <h3>Chef Andi</h3>
+                <p>Head Chef</p>
+            </div>
+
+            <div class="team-card">
+                <div class="team-photo chef-two">
+                    <img src="img/chef2.jpg" alt="Chef Sinta">
+                </div>
+                <h3>Chef Sinta</h3>
+                <p>Kitchen Team</p>
+            </div>
+
+            <div class="team-card">
+                <div class="team-photo manager">
+                    <img src="img/manager.jpg" alt="Rizky">
+                </div>
+                <h3>Rizky</h3>
+                <p>Restaurant Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="tahun"></span> Dapur Senja. All rights reserved.</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
