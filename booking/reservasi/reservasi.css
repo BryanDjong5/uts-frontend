@@ -124,18 +124,21 @@ body {
     margin-left: 220px;
 }
 
+/* ===== TABLET ===== */
 @media (max-width: 1024px) {
     .reservasi {
+        box-sizing: border-box;
         width: 70%;
         left: 15%;
         top: 15%;
-        bottom: 15%;
+        bottom: auto;
         height: auto;
+        padding: 20px 20px 80px;
     }
 
     .reservasi h1 {
-        font-size: 35px;
-        margin-left: 0;
+        font-size: 32px;
+        margin: 40px 0 20px;
         text-align: center;
     }
 
@@ -147,36 +150,42 @@ body {
     .gambar-meja img,
     .gambar-antri img {
         width: 19%;
+        pointer-events: none;
     }
 
     .input-reservasi {
-        width: 80%;
-        margin-left: 10%;
-        top: 28%;
+        position: static;
+        box-sizing: border-box;
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
     }
 
     #tombol-reservasi {
-        margin-left: 0;
-        align-self: center;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto 0;
         width: 180px;
     }
 }
 
+/* ===== HP ===== */
 @media (max-width: 600px) {
     .reservasi {
         box-sizing: border-box;
         width: 92%;
         left: 4%;
-        top: 5%;
-        bottom: 5%;
+        top: 90px;
+        bottom: auto;
         height: auto;
-        padding: 12px;
+        padding: 12px 12px 70px;
         border-width: 3px;
     }
 
     .reservasi h1 {
         font-size: 22px;
-        margin: 70px 0 0 0;   
+        margin: 55px 0 15px;
         text-align: center;
     }
 
@@ -194,20 +203,23 @@ body {
         width: 25%;
         top: auto;
         bottom: 0;
+        pointer-events: none;
     }
 
     .input-reservasi {
+        position: static;
         box-sizing: border-box;
-        width: 90%;
+        width: 100%;
         height: auto;
-        margin-left: 5%;
-        top: 130px;
+        margin: 0;
         gap: 10px;
     }
 
     #tombol-reservasi {
-        margin-left: 0;
-        align-self: center;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto 0;
         width: 100%;
         max-width: 200px;
     }
