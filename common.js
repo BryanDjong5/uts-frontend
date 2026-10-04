@@ -12,7 +12,6 @@ function me(){var n=sget("ds_session",null);return n?users().find(function(u){re
 function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 var $=function(s){return document.querySelector(s)};
 
-
 function authShell(title,sub,body,alt,heroTitle){
 return '<div class="auth"><section class="hero"><div class="brand"><img class="logo" src="images/logo.png" alt="Dapur Senja"></div>'+
 '<div><h1>'+heroTitle+'</h1><p>Masakan Restaurant Nusantara, meja yang hangat, dan reservasi yang tidak ribet.</p></div>'+

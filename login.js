@@ -5,7 +5,7 @@ $("#app").innerHTML=authShell("LOGIN/MASUK","Selamat datang kembali. Masuk untuk
 field("id","Email atau Username","text","nama@email.com","username")+
 pwField("pw","Kata Sandi","Masukkan kata sandi","current-password")+
 '<button class="btn" id="go">MASUK</button>',
-'Belum punya akun? <a href="index.html">Daftar sekarang</a>',"Restaurant andalan Warga Indonesia!");
+'Belum punya akun? <a href="register.html">Daftar sekarang</a>',"Restaurant andalan Warga Indonesia!");
 eyes();
 function submit(){
 var id=$("#id").value.trim().toLowerCase(),pw=$("#pw").value,ok=true;

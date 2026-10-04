@@ -1,6 +1,6 @@
 var editing=false;
 function profilePage(){
-var u=me();if(!u){location.href="login.html";return}
+var u=me();if(!u){location.href="index.html";return}
 var ini=u.nama.split(" ").map(function(w){return w[0]}).slice(0,2).join("").toUpperCase();
 var stLabel={akan:"Akan datang",selesai:"Selesai",batal:"Dibatalkan"};
 var bk=u.booking.length?u.booking.map(function(b){return '<div class="bk"><b>'+esc(b.resto)+'</b><span class="st '+b.status+'">'+stLabel[b.status]+'</span><span>'+esc(b.tgl)+' · '+b.tamu+' tamu</span></div>'}).join(""):'<p class="empty">Belum ada reservasi. Pilih meja pertamamu di Dapur Senja.</p>';
@@ -15,7 +15,7 @@ field("hp","Nomor HP","tel","0812-3456-7890","tel").replace('class="inp"','class
 '<dl><dt>Email</dt><dd>'+esc(u.email)+'</dd><dt>Nomor HP</dt><dd>'+(u.hp?esc(u.hp):'<span style="color:var(--mute)">Belum diisi</span>')+'</dd></dl><button class="btn ghost" id="edit">Edit profil</button></div>';
 $("#app").innerHTML='<header class="top"><div class="brand"><span class="dot"></span>Dapur Senja</div><button id="out">Keluar</button></header>'+
 '<main class="wrap"><div id="left">'+left+'</div><section class="card"><div class="hd"><h3>Riwayat booking</h3><span style="color:var(--mute);font-size:14px">'+u.booking.length+' reservasi</span></div>'+bk+'</section></main>';
-$("#out").onclick=function(){sset("ds_session",null);editing=false;location.href="login.html"};
+$("#out").onclick=function(){sset("ds_session",null);editing=false;location.href="index.html"};
 if(!editing){$("#edit").onclick=function(){editing=true;profilePage()};return}
 var foto=u.foto;
 $("#pick").onclick=function(){$("#file").click()};

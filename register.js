@@ -6,7 +6,7 @@ field("em","Email","email","nama@email.com","email")+
 pwField("pw","Kata sandi","Minimal 8 karakter","new-password")+
 pwField("pw2","Konfirmasi kata sandi","Ulangi kata sandi","new-password")+
 '<button class="btn" id="go">Daftar</button>',
-'Sudah punya akun? <a href="login.html">Masuk</a>',"Bergabung, lalu pilih meja favoritmu.");
+'Sudah punya akun? <a href="index.html">Masuk</a>',"Bergabung, lalu pilih meja favoritmu.");
 eyes();
 $("#go").onclick=function(){
 var v={nama:$("#nama").value.trim(),un:$("#un").value.trim(),em:$("#em").value.trim(),pw:$("#pw").value,pw2:$("#pw2").value};
@@ -21,7 +21,7 @@ chk("pw",v.pw.length<8,"Kata sandi minimal 8 karakter.");
 chk("pw2",v.pw2!==v.pw||!v.pw2,"Konfirmasi harus sama dengan kata sandi.");
 if(bad)return;
 all.push({nama:v.nama,username:v.un,email:v.em,password:v.pw,hp:"",foto:"",booking:[]});
-sset("ds_users",all);sset("ds_flash","Akun berhasil dibuat. Silakan masuk.");location.href="login.html"}}
+sset("ds_users",all);sset("ds_flash","Akun berhasil dibuat. Silakan masuk.");location.href="index.html"}}
 
 
 registerPage();
