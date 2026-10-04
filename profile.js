@@ -13,7 +13,7 @@ field("hp","Nomor HP","tel","0812-3456-7890","tel").replace('class="inp"','class
 '<div class="row"><button class="btn sm" id="save">Simpan perubahan</button><button class="btn ghost sm" id="cancel">Batal</button></div></div></div>':
 '<div class="card"><div class="who"><div class="avatar">'+(u.foto?'<img alt="Foto profil" src="'+u.foto+'">':ini)+'</div><h2>'+esc(u.nama)+'</h2><div class="un">@'+esc(u.username)+'</div></div>'+
 '<dl><dt>Email</dt><dd>'+esc(u.email)+'</dd><dt>Nomor HP</dt><dd>'+(u.hp?esc(u.hp):'<span style="color:var(--mute)">Belum diisi</span>')+'</dd></dl><button class="btn ghost" id="edit">Edit profil</button></div>';
-$("#app").innerHTML='<header class="top"><div class="brand"><span class="dot"></span>Dapur Senja</div><nav class="topnav"><a href="home/home.html">Home</a><a href="menu/menu.html">Menu</a><a href="promo/promotions.html">Promo &amp; Info</a><a href="reservasi/reservasi.html">Reservation</a></nav><button id="out">Keluar</button></header>'+
+$("#app").innerHTML='<header class="top"><div class="brand"><span class="dot"></span>Dapur Senja</div><nav class="topnav"><a href="home/home.html">Home</a><a href="menu/menu.html">Menu</a><a href="promo/promotions.html">Promo &amp; Info</a><a href="/booking/reservasi/reservasi.html">Reservation</a></nav><button id="out">Keluar</button></header>'+
 '<main class="wrap"><div id="left">'+left+'</div><section class="card"><div class="hd"><h3>Riwayat booking</h3><span style="color:var(--mute);font-size:14px">'+u.booking.length+' reservasi</span></div>'+bk+'</section></main>';
 $("#out").onclick=function(){sset("ds_session",null);editing=false;location.href="login.html"};
 if(!editing){$("#edit").onclick=function(){editing=true;profilePage()};return}
