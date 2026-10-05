@@ -124,7 +124,6 @@ body {
     margin-left: 220px;
 }
 
-/* ===== TABLET ===== */
 @media (max-width: 1024px) {
     .reservasi {
         box-sizing: border-box;
@@ -170,7 +169,6 @@ body {
     }
 }
 
-/* ===== HP ===== */
 @media (max-width: 600px) {
     .reservasi {
         box-sizing: border-box;
